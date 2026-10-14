@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#07050d">
+  <meta name="description" content="riplaz — крипта, графики и полезные ссылки без лишнего шума. Честно о рисках.">
+  <title>СВЕЧА — by riplaz</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@500;600;700;800&family=Onest:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <canvas id="chartCanvas" aria-hidden="true"></canvas>
+  <div class="overlay" aria-hidden="true"></div>
+  <div class="cursor-glow" aria-hidden="true"></div>
+
+  <header class="header" id="header">
+    <a class="logo" href="#top" aria-label="СВЕЧА — на главную">
+      <span class="logo__candle" aria-hidden="true"></span>
+      <span>СВЕЧА</span>
+      <small>by riplaz</small>
+    </a>
+
+    <nav class="nav" aria-label="Главная навигация">
+      <a href="#about">Обо мне</a>
+      <a href="#services">Услуги</a>
+      <a href="https://t.me/riplaz" target="_blank" rel="noopener noreferrer">Контакты <span aria-hidden="true">↗</span></a>
+    </nav>
+
+    <a class="btn btn--small header__action" data-ref aria-label="Открыть Bitunix"><img class="bitunix-logo bitunix-logo--header" src="assets/bitunix-wordmark-header.png" alt="Bitunix" width="787" height="164"> <span class="btn__arrow" aria-hidden="true">↗</span></a>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <div class="hero__orb hero__orb--one" aria-hidden="true"></div>
+      <div class="hero__orb hero__orb--two" aria-hidden="true"></div>
+      <div class="hero__inner">
+        <p class="eyebrow"><span class="status-dot" aria-hidden="true"></span> КРИПТА · ГРАФИКИ · БЕЗ ШУМА</p>
+        <h1 class="hero__title">
+          <span class="hero__title-line">Хватит смотреть на график.</span>
+          <span class="hero__title-line hero__title-line--accent">Заходи в крипту.</span>
+        </h1>
+        <p class="hero__text">Я riplaz. Разбираю инструменты, показываю полезные ссылки и говорю о рисках без сказок о лёгких деньгах.</p>
+        <div class="hero__actions">
+          <a class="btn" data-ref>Открыть <span class="brand-bitunix">Bitunix</span> <span class="btn__arrow" aria-hidden="true">↗</span></a>
+          <a class="btn btn--ghost" href="#services">Смотреть услуги <span class="btn__arrow" aria-hidden="true">↓</span></a>
+        </div>
+      </div>
+    </section>
+
+    <section class="panel about" id="about">
+      <div class="container">
+        <div class="section-kicker reveal"><span>01</span> / ОБО МНЕ</div>
+        <div class="about__layout">
+          <h2 class="reveal">Я <span class="text-gradient">riplaz.</span></h2>
+          <div class="about__copy reveal">
+            <p>Интересуюсь крипторынком, графиками и цифровыми проектами.</p>
+            <p>Здесь собрал главное: мои контакты, полезные переходы и место для общения. Без обещаний гарантированного дохода.</p>
+            <a class="text-link" href="https://t.me/riplaz" target="_blank" rel="noopener noreferrer">Написать мне <span aria-hidden="true">↗</span></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="panel services" id="services">
+      <div class="container">
+        <div class="section-kicker reveal"><span>02</span> / УСЛУГИ И ССЫЛКИ</div>
+        <div class="services__heading reveal">
+          <h2>Выбирай <span class="text-gradient">направление.</span></h2>
+          <p>Два понятных варианта — без лишнего текста.</p>
+        </div>
+
+        <div class="service-grid">
+          <article class="service-card service-card--exchange reveal">
+            <div class="service-card__top">
+              <span class="service-card__icon service-card__icon--brand" aria-hidden="true"><img src="assets/bitunix-mark.png" alt="" width="618" height="491"></span>
+              <span class="service-card__tag">ПЛАТФОРМА</span>
+            </div>
+            <h3 class="service-card__brand-title"><img class="bitunix-logo bitunix-logo--card" src="assets/bitunix-logo-lime.png" alt="Bitunix — Better Liquidity, Better Trading" width="820" height="298" loading="lazy"></h3>
+            <p>Перейти на платформу и самостоятельно изучить её условия.</p>
+            <div class="service-card__bottom">
+              <span class="service-card__note">Реферальная ссылка · условия платформы</span>
+              <a class="btn" data-ref>Открыть <span class="brand-bitunix">Bitunix</span> <span class="btn__arrow" aria-hidden="true">↗</span></a>
+            </div>
+          </article>
+
+          <article class="service-card service-card--team reveal">
+            <div class="service-card__top">
+              <span class="service-card__icon service-card__icon--team" aria-hidden="true">↗</span>
+              <span class="service-card__tag">КОМЬЮНИТИ</span>
+            </div>
+            <h3>Торговая команда</h3>
+            <p>Общение о графиках, дисциплине и рынке. Без гарантий прибыли.</p>
+            <div class="service-card__bottom">
+              <span class="service-card__note">Связь напрямую в Telegram</span>
+              <a class="btn btn--ghost" href="https://t.me/riplaz" target="_blank" rel="noopener noreferrer">Написать в Telegram <span class="btn__arrow" aria-hidden="true">↗</span></a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="panel game-panel" id="mini-game">
+      <div class="container">
+        <div class="section-kicker reveal"><span>03</span> / МИНИ-ИГРА</div>
+        <div class="game-layout">
+          <div class="game-copy reveal">
+            <p class="game-copy__label"><span aria-hidden="true">✦</span> ПАУЗА НА 20 СЕКУНД</p>
+            <h2>Найди пары<br><span class="text-gradient">свечей.</span></h2>
+            <p>Открой две карточки за ход. Найди все шесть пар на память.</p>
+            <div class="game-hint"><span aria-hidden="true">↳</span> Совпадение — пара твоя.</div>
+          </div>
+
+          <div class="game-shell reveal" aria-label="Мини-игра на память">
+            <div class="game-shell__top">
+              <div class="game-shell__live"><span class="status-dot" aria-hidden="true"></span> MEMORY / 01</div>
+              <div class="game-stats" aria-live="polite">
+                <div><span>ХОДЫ</span><strong data-game-moves>00</strong></div>
+                <div><span>ПАРЫ</span><strong><span data-game-pairs>00</span><i> / 06</i></strong></div>
+              </div>
+            </div>
+            <div class="memory-grid" id="memoryGrid" aria-label="Карточки со свечами"></div>
+            <div class="game-shell__bottom">
+              <p class="game-message" data-game-message aria-live="polite">Запусти раунд и найди пары.</p>
+              <button class="btn btn--game" id="gameStart" type="button">Начать игру <span class="btn__arrow" aria-hidden="true">↗</span></button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="panel contact-panel" id="contact-panel">
+      <div class="container contact-panel__inner reveal">
+        <div class="section-kicker"><span>04</span> / НА СВЯЗИ</div>
+        <h2>Есть вопрос?<br><span class="text-gradient">Пиши.</span></h2>
+        <a class="btn" href="https://t.me/riplaz" target="_blank" rel="noopener noreferrer">Telegram @riplaz <span class="btn__arrow" aria-hidden="true">↗</span></a>
+      </div>
+    </section>
+  </main>
+
+  <button class="hero__scroll" id="scrollNext" type="button" aria-label="Перейти к следующему разделу"><span class="hero__scroll-label">ЛИСТАЙ</span><b aria-hidden="true">↓</b></button>
+
+  <div class="floating-links" id="floatingLinks" aria-label="Быстрые ссылки">
+    <a class="floating-link floating-link--telegram" href="https://t.me/riplaz" target="_blank" rel="noopener noreferrer" aria-label="Открыть Telegram riplaz" title="Telegram">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M21.4 4.6 18.2 20c-.24 1.08-.88 1.35-1.78.84l-4.92-3.63-2.38 2.3c-.27.27-.5.5-1.02.5l.36-5.02 9.14-8.26c.4-.36-.09-.56-.62-.2L5.68 13.67.84 12.15c-1.05-.33-1.07-1.05.22-1.56L19.98 3.3c.87-.32 1.63.2 1.42 1.3Z"/></svg>
+    </a>
+    <a class="floating-link floating-link--exchange" data-ref aria-label="Открыть Bitunix" title="Bitunix"><img class="floating-link__logo" src="assets/bitunix-mark-bright.png" alt="" width="618" height="491"></a>
+  </div>
+
+  <footer class="footer">
+    <a class="footer__brand" href="#top"><span class="logo__candle" aria-hidden="true"></span><span>СВЕЧА <small>by riplaz</small></span></a>
+    <p>Сайт не является официальным ресурсом <span class="brand-bitunix">Bitunix</span>. Ссылка реферальная: автор может получать вознаграждение. Материалы не являются финансовой рекомендацией. Криптовалюты и деривативы связаны с высоким риском потери средств. Только для совершеннолетних, если сервис разрешён в вашей стране. График — симуляция.</p>
+    <a class="footer__top" href="#top">НАВЕРХ ↑</a>
+  </footer>
+
+  <script src="js/config.js"></script>
+  <script src="js/candles.js"></script>
+  <script src="js/game.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
